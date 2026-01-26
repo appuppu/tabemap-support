@@ -1,14 +1,14 @@
-# 食べマップ - サポートページ
+# 食べレコ - サポートページ
 
-このリポジトリは、食べマップアプリの利用規約とプライバシーポリシーを公開するためのGitHub Pagesリポジトリです。
+食べレコアプリの利用規約とプライバシーポリシーを公開するためのGitHub Pagesプロジェクトです。
 
 ## 公開URL
 
 https://appuppu.github.io/tabemap-support/
 
-## リポジトリURL
+または
 
-git@github.com:appuppu/tabemap-support.git
+https://[your-username].github.io/tabemap-support/
 
 ## ファイル構成
 
@@ -16,38 +16,44 @@ git@github.com:appuppu/tabemap-support.git
 - `terms.html` - 利用規約
 - `privacy.html` - プライバシーポリシー
 
-## GitHub Pagesの設定
+## GitHub Pagesの設定方法
 
-1. このリポジトリをGitHubにプッシュ
+1. GitHubに新しいリポジトリ `tabemap-support` を作成
+2. ローカルでファイルをコミット:
    ```bash
-   git remote add origin git@github.com:appuppu/tabemap-support.git
+   cd /Users/fukushimatakumi/develop/tabemap-support
+   git add .
+   git commit -m "Initial commit: Add legal documents"
+   ```
+
+3. GitHubリポジトリにプッシュ:
+   ```bash
+   git remote add origin https://github.com/[your-username]/tabemap-support.git
    git branch -M main
    git push -u origin main
    ```
 
-2. リポジトリの Settings → Pages
-3. Source: Deploy from a branch
-4. Branch: main (または master)、フォルダ: / (root)
-5. Save
+4. GitHubのリポジトリ設定でGitHub Pagesを有効化:
+   - Settings > Pages
+   - Source: Deploy from a branch
+   - Branch: main / (root)
+   - Save
 
-数分後、https://appuppu.github.io/tabemap-support/ でアクセス可能になります。
+5. 数分後に `https://[your-username].github.io/tabemap-support/` でアクセス可能になります
 
 ## 更新方法
 
-1. HTMLファイルを編集
-2. Gitでコミット＆プッシュ
-   ```bash
-   git add .
-   git commit -m "Update contents"
-   git push
-   ```
-3. 自動的にGitHub Pagesが更新されます
+利用規約やプライバシーポリシーを更新する場合:
 
-## お問い合わせ
+```bash
+# ファイルを編集後
+git add .
+git commit -m "Update terms/privacy policy"
+git push origin main
+```
 
-お問い合わせフォーム: https://forms.gle/ypae3gbaEyTmCXXX8
+変更は自動的にGitHub Pagesに反映されます。
 
-## 注意事項
+## ライセンス
 
-- 内容を変更した場合は、各ページの「最終更新日」も更新してください
-- App Storeのアプリ情報で、サポートURLとして https://appuppu.github.io/tabemap-support/ を設定してください
+© 2026 tabemap. All rights reserved.
