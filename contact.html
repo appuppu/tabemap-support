@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabemap - 食べレコ</title>
+    <title>お問い合わせ - tabemap</title>
     <style>
         * {
             margin: 0;
@@ -36,26 +36,33 @@
             margin-bottom: 30px;
             color: #666;
         }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .link-button {
-            display: block;
-            padding: 15px 30px;
+        .contact-button {
+            display: inline-block;
+            padding: 15px 40px;
             background: #667eea;
             color: white;
             text-decoration: none;
             border-radius: 10px;
             text-align: center;
             font-weight: 600;
+            font-size: 1.1rem;
             transition: all 0.3s;
+            margin-bottom: 30px;
         }
-        .link-button:hover {
+        .contact-button:hover {
             background: #764ba2;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
         }
         footer {
             margin-top: 40px;
@@ -67,13 +74,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>🍽️ tabemap</h1>
-        <p>お店のご飯、おうちご飯を記録しよう！</p>
+        <h1>📧 お問い合わせ</h1>
+        <p>ご質問やご要望がございましたら、以下のフォームよりお気軽にお問い合わせください。</p>
 
-        <div class="links">
-            <a href="terms.html" class="link-button">利用規約</a>
-            <a href="privacy.html" class="link-button">プライバシーポリシー</a>
-            <a href="contact.html" class="link-button">お問い合わせ</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXgNw84cu3msJnUcyPNOIiTQUilJGwW0l6ch7enYY4cn267A/viewform?usp=dialog" class="contact-button" target="_blank">お問い合わせフォームへ</a>
+
+        <div>
+            <a href="index.html" class="back-link">← トップページに戻る</a>
         </div>
 
         <footer>
