@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>地図コレ - サポート</title>
+    <title>MapColle - Support</title>
     <style>
         * {
             margin: 0;
@@ -65,41 +65,22 @@
         }
     </style>
 <style>.lang-nav{display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:flex-end;font-size:.85rem;margin-bottom:16px}.lang-nav a{color:#667eea;text-decoration:none}.lang-nav span{color:#999;font-weight:600}</style>
-<script>
-// 日本語以外のブラウザは、その言語のページへ（初回だけ。言語切り替えで日本語を選んだら以後は出さない）
-(function () {
-  try {
-    if (sessionStorage.getItem('langChosen')) return;
-    var l = (navigator.languages && navigator.languages[0] || navigator.language || 'ja').toLowerCase();
-    var to = null;
-    if (l.indexOf('ja') === 0) return;
-    else if (l.indexOf('zh') === 0) to = (/hant|tw|hk|mo/.test(l)) ? 'zh-Hant/' : 'zh-Hans/';
-    else if (l.indexOf('ko') === 0) to = 'ko/';
-    else if (l.indexOf('es') === 0) to = 'es/';
-    else to = 'en/';
-    location.replace(to + location.search);
-  } catch (e) {}
-})();
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('.lang-nav a');
-  if (a) { try { sessionStorage.setItem('langChosen', '1'); } catch (_) {} }
-});
-</script>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.lang-nav a');if(a){try{sessionStorage.setItem('langChosen','1')}catch(_){}}});</script>
 </head>
 <body>
     <div class="container">
-        <!--LANG-NAV--><nav class="lang-nav"><span>日本語</span><a href="en/index.html" hreflang="en" lang="en">English</a><a href="zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="es/index.html" hreflang="es" lang="es">Español</a><a href="ko/index.html" hreflang="ko" lang="ko">한국어</a></nav><!--/LANG-NAV-->
-        <h1>🗺️ 地図コレ</h1>
-        <p>自分だけの地図を、何枚でも。</p>
+        <!--LANG-NAV--><nav class="lang-nav"><a href="../index.html" hreflang="ja" lang="ja">日本語</a><span>English</span><a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="../es/index.html" hreflang="es" lang="es">Español</a><a href="../ko/index.html" hreflang="ko" lang="ko">한국어</a></nav><!--/LANG-NAV-->
+        <h1>🗺️ MapColle</h1>
+        <p>Your own maps, as many as you like.</p>
 
         <div class="links">
-            <a href="terms.html" class="link-button">利用規約</a>
-            <a href="privacy.html" class="link-button">プライバシーポリシー</a>
-            <a href="contact.html" class="link-button">お問い合わせ</a>
+            <a href="terms.html" class="link-button">Terms of Use</a>
+            <a href="privacy.html" class="link-button">Privacy Policy</a>
+            <a href="contact.html" class="link-button">Contact</a>
         </div>
 
         <footer>
-            <p>&copy; 2026 地図コレ. All rights reserved.</p>
+            <p>&copy; 2026 MapColle. All rights reserved.</p>
         </footer>
     </div>
 </body>

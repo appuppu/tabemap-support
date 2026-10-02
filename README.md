@@ -15,6 +15,11 @@ https://[your-username].github.io/tabemap-support/
 - `index.html` - トップページ
 - `terms.html` - 利用規約
 - `privacy.html` - プライバシーポリシー
+- `contact.html` - お問い合わせ（Google フォームへの案内）
+- `en/` `es/` `zh-Hans/` `zh-Hant/` `ko/` - 上の4ページの各言語版（2026-10-03）。
+  日本語版が正。規約・ポリシーを変えたら**全言語版も直す**。
+  各ページ上部の言語切り替え（`<!--LANG-NAV-->`〜`<!--/LANG-NAV-->`）で行き来できる。
+  直下の `index.html` は日本語以外のブラウザをその言語の版へ送る（アプリは表示言語の版を直接開く）
 
 ## GitHub Pagesの設定方法
 
